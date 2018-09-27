@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.timeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.plusLeftLabel = new System.Windows.Forms.Label();
@@ -50,7 +51,8 @@
             this.dividedRightLabel = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.dividedLeftLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.startButton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -269,23 +271,29 @@
             this.dividedLeftLabel.Text = "?";
             this.dividedLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // startButton
             // 
-            this.button1.AutoSize = true;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(161, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 39);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Start the quiz";
-            this.button1.UseVisualStyleBackColor = true;
+            this.startButton.AutoSize = true;
+            this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.startButton.Location = new System.Drawing.Point(161, 275);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(161, 39);
+            this.startButton.TabIndex = 1;
+            this.startButton.Text = "Start the quiz";
+            this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(478, 349);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dividedRightLabel);
@@ -345,7 +353,8 @@
         private System.Windows.Forms.Label dividedRightLabel;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label dividedLeftLabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

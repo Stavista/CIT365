@@ -12,6 +12,24 @@ namespace Math_Quiz
 {
     public partial class Form1 : Form
     {
+        Random randomizer = new Random();
+        int addend1;
+        int addend2;
+        int timeLeft; 
+
+        public void StartTheQuiz()
+        {
+            addend1 = randomizer.Next(51);
+            addend2 = randomizer.Next(51);
+            plusLeftLabel.Text = addend1.ToString();
+            plusRightLabel.Text = addend2.ToString();
+            sum.Value = 0;
+
+            timeLeft = 30;
+            timeLabel.Text = "30 seconds";
+            timer1.Start();
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -25,6 +43,29 @@ namespace Math_Quiz
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            StartTheQuiz();
+            startButton.Enabled = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft = timeLeft - 1;
+                timeLabel.Text = timeLeft + " seconds";
+            }
+            else
+            {
+                timer1.Stop();
+                timeLabel.Text = "Time's up!";
+                MessageBox.Show("You didn't finish in time.", "Sorry!");
+                sum.Value = addend1 + addend2;
+                startButton.Enabled = true;
+            }
         }
     }
 }
