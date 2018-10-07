@@ -1,0 +1,14 @@
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\bin\Debug\MegaDesk-3-SamanthaStavast.exe.config
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\bin\Debug\MegaDesk-3-SamanthaStavast.exe
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\bin\Debug\MegaDesk-3-SamanthaStavast.pdb
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk-3-SamanthaStavast.csprojAssemblyReference.cache
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.MainMenu.resources
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.Properties.Resources.resources
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk-3-SamanthaStavast.csproj.GenerateResource.cache
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk-3-SamanthaStavast.csproj.CoreCompileInputs.cache
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk-3-SamanthaStavast.exe
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk-3-SamanthaStavast.pdb
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.AddQuote.resources
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.DisplayQuote.resources
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.SearchQuotes.resources
+C:\Users\stava\source\repos\MegaDesk-3-SamanthaStavast\MegaDesk-3-SamanthaStavast\obj\Debug\MegaDesk_3_SamanthaStavast.ViewAllQuotes.resources
