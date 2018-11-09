@@ -1,15 +1,15 @@
 ﻿using System;
+using static MegaDesk_3_SamanthaStavast.Desk;
 
 namespace MegaDesk_3_SamanthaStavast
 {
-    class DeskQuote
+    public class DeskQuote
     {
-        protected
-            int rush;
-            double quotePrice = 200;
-            DateTime date = DateTime.Now;
-            Desk desk;
-
+        public int rush;
+        public double quotePrice = 200;
+        public string date;
+        public Desk desk;
+         
         private string userName;
 
         public DeskQuote(int rush, string userName, Desk desk)
@@ -17,6 +17,7 @@ namespace MegaDesk_3_SamanthaStavast
             this.rush = rush;
             this.userName = userName;
             this.desk = desk;
+            this.date = DateTime.Now.ToShortDateString();
         }
 
         public string UserName { get => userName; set => userName = value; }
@@ -73,19 +74,19 @@ namespace MegaDesk_3_SamanthaStavast
             return 0;
         }
 
-        private int calculateSurfacePrice(string surface)
+        private int calculateSurfacePrice(Material surface)
         {
             switch (surface)
             {
-                case "Pine":
+                case Material.Pine:
                     return 50;
-                case "Laminate":
+                case Material.Laminate:
                     return 100;
-                case "Veneer":
+                case Material.Veneer:
                     return 125;
-                case "Oak":
+                case Material.Oak:
                     return 200;
-                case "Rosewood":
+                case Material.Rosewood:
                     return 300;
                 default:
                     return 0;

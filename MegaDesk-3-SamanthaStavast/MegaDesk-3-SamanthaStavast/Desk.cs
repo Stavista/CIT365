@@ -1,28 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 
 namespace MegaDesk_3_SamanthaStavast
 {
-    class Desk
+    public class Desk
     {
-         public int 
-            width,
-            depth,
-            drawers;
-         public string surfaceMaterial;
+        public int
+           width,
+           depth,
+           drawers;
+        public enum Material
+        {
+            Pine,
+            Laminate,
+            Veneer,
+            Oak,
+            Rosewood
+        };
 
-        public Desk(int width, int depth, int drawers, string surfaceMaterial)
+        public Material surfaceMaterial;
+
+        public Desk(int width, int depth, int drawers, Material surfaceMaterial)
         {
             this.width = width;
             this.depth = depth;
             this.drawers = drawers;
-            this.surfaceMaterial = surfaceMaterial;
+            this.surfaceMaterial = (Material)surfaceMaterial;
         }
 
-        public bool CheckConstraints ()
+        public bool CheckConstraints()
         {
             if (width < 24 || width > 96)
             {
@@ -30,13 +36,32 @@ namespace MegaDesk_3_SamanthaStavast
             }
             if (depth < 12 || depth > 48)
             {
-                return false; 
+                return false;
             }
             if (drawers < 0 || drawers > 7)
             {
                 return false;
             }
             return true;
+        }
+
+        internal string getSurfaceString(Material incomingMaterial)
+        {
+            switch (incomingMaterial)
+            {
+                case Material.Pine:
+                    return "Pine";
+                case Material.Laminate:
+                    return "Laminate";
+                case Material.Veneer:
+                    return "Veneer";
+                case Material.Oak:
+                    return "Oak";
+                case Material.Rosewood:
+                    return "Rosewood";
+                default:
+                    return "unknown";
+            }
         }
 
         public int getSize()

@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label_QuotePrice = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelUsername = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label_width = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,9 +39,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label_surfaceMaterial = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label_rush = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label_date = new System.Windows.Forms.Label();
             this.returnHome = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -61,19 +61,19 @@
             this.label_QuotePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_QuotePrice.Location = new System.Drawing.Point(111, 48);
             this.label_QuotePrice.Name = "label_QuotePrice";
-            this.label_QuotePrice.Size = new System.Drawing.Size(207, 58);
+            this.label_QuotePrice.Size = new System.Drawing.Size(151, 58);
             this.label_QuotePrice.TabIndex = 1;
-            this.label_QuotePrice.Text = "$200.00";
+            this.label_QuotePrice.Text = "$0.00";
             // 
-            // label2
+            // labelUsername
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Brother Thane\'s Desk:";
+            this.labelUsername.AutoSize = true;
+            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(12, 115);
+            this.labelUsername.Name = "labelUsername";
+            this.labelUsername.Size = new System.Drawing.Size(89, 25);
+            this.labelUsername.TabIndex = 2;
+            this.labelUsername.Text = "-\'s Desk:";
             // 
             // label3
             // 
@@ -91,9 +91,9 @@
             this.label_width.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_width.Location = new System.Drawing.Point(223, 149);
             this.label_width.Name = "label_width";
-            this.label_width.Size = new System.Drawing.Size(34, 25);
+            this.label_width.Size = new System.Drawing.Size(19, 25);
             this.label_width.TabIndex = 4;
-            this.label_width.Text = "96";
+            this.label_width.Text = "-";
             // 
             // label4
             // 
@@ -111,9 +111,9 @@
             this.label_depth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_depth.Location = new System.Drawing.Point(223, 174);
             this.label_depth.Name = "label_depth";
-            this.label_depth.Size = new System.Drawing.Size(34, 25);
+            this.label_depth.Size = new System.Drawing.Size(19, 25);
             this.label_depth.TabIndex = 6;
-            this.label_depth.Text = "48";
+            this.label_depth.Text = "-";
             this.label_depth.Click += new System.EventHandler(this.label_depth_Click);
             // 
             // label_drawers
@@ -122,9 +122,9 @@
             this.label_drawers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_drawers.Location = new System.Drawing.Point(234, 199);
             this.label_drawers.Name = "label_drawers";
-            this.label_drawers.Size = new System.Drawing.Size(23, 25);
+            this.label_drawers.Size = new System.Drawing.Size(19, 25);
             this.label_drawers.TabIndex = 8;
-            this.label_drawers.Text = "7";
+            this.label_drawers.Text = "-";
             // 
             // label6
             // 
@@ -142,9 +142,9 @@
             this.label_surfaceMaterial.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_surfaceMaterial.Location = new System.Drawing.Point(223, 220);
             this.label_surfaceMaterial.Name = "label_surfaceMaterial";
-            this.label_surfaceMaterial.Size = new System.Drawing.Size(104, 25);
+            this.label_surfaceMaterial.Size = new System.Drawing.Size(19, 25);
             this.label_surfaceMaterial.TabIndex = 10;
-            this.label_surfaceMaterial.Text = "Rosewood";
+            this.label_surfaceMaterial.Text = "-";
             // 
             // label7
             // 
@@ -156,15 +156,15 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Surface Material:";
             // 
-            // label5
+            // label_rush
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(223, 244);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 25);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "14";
+            this.label_rush.AutoSize = true;
+            this.label_rush.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_rush.Location = new System.Drawing.Point(223, 244);
+            this.label_rush.Name = "label_rush";
+            this.label_rush.Size = new System.Drawing.Size(19, 25);
+            this.label_rush.TabIndex = 12;
+            this.label_rush.Text = "-";
             // 
             // label8
             // 
@@ -176,15 +176,15 @@
             this.label8.TabIndex = 11;
             this.label8.Text = "Day\'s till order:";
             // 
-            // label9
+            // label_date
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(333, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 20);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "10/04/18";
+            this.label_date.AutoSize = true;
+            this.label_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_date.Location = new System.Drawing.Point(268, 9);
+            this.label_date.Name = "label_date";
+            this.label_date.Size = new System.Drawing.Size(15, 20);
+            this.label_date.TabIndex = 13;
+            this.label_date.Text = "-";
             // 
             // returnHome
             // 
@@ -206,8 +206,8 @@
             this.CancelButton = this.returnHome;
             this.ClientSize = new System.Drawing.Size(418, 327);
             this.Controls.Add(this.returnHome);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label_date);
+            this.Controls.Add(this.label_rush);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label_surfaceMaterial);
             this.Controls.Add(this.label7);
@@ -217,7 +217,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label_width);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.label_QuotePrice);
             this.Controls.Add(this.label1);
             this.Name = "DisplayQuote";
@@ -232,7 +232,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_QuotePrice;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_width;
         private System.Windows.Forms.Label label4;
@@ -241,9 +241,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label_surfaceMaterial;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label_rush;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label_date;
         private System.Windows.Forms.Button returnHome;
     }
 }
